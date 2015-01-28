@@ -1,0 +1,2 @@
+class ArraySearch::Engine
+end
