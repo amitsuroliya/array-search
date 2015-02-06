@@ -7,9 +7,10 @@ module ArraySearch
   def self.check
     array = ArraySearch::ArrayValues.gets_until_no
     value = ArraySearch::Value.gets_it
-    puts result = ArraySearch::Value.exist_or_not(value,array)
+    result = ArraySearch::Value.exist_or_not(array,value)
     puts value.to_s+" is exists in "+array.to_s if result
     puts value.to_s+" is not exists in "+array.to_s unless result
+    return result.present?
   end
 
 end
